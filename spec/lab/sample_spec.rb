@@ -4,7 +4,7 @@ describe package('docker-ce'), :if => os[:family] == 'debian' do
   it { should be_installed }
 end
 
-describe user('vagrant') do
+describe user('nickfury') do
     it { should exist }
     it { should belong_to_group 'docker' }
 end
